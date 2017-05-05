@@ -3,6 +3,7 @@ namespace Beltrao\WeqtApi\v1;
 
 use Slim\App;
 
+
 /**
  * Created by Rudda Beltrao
  * Date: 25/04/2017
@@ -19,5 +20,6 @@ use Slim\App;
     include 'routers/Defeitos.php';
     include 'routers/WEQT.php';
     include "routers/Usuario.php";
+
     $app->run();  
     

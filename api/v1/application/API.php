@@ -290,20 +290,72 @@ class API
         
     }
 
-    public function addWEQTCommit($json, $userID, $evaluationID){
+    public function addDiscrepancia($json, $tarefaID, $usuarioID, $avaliacaoID){
 
+        $pdo = Connection::connect();
+        $query = Queries::$PUT_DISCREPANCIA;
+        $p1 = true;
+        $p2 = true;
+        
+       for($i=0; $i< count($json); $i++){
+
+           $value = $json[$i];
+           $stmt = $pdo->prepare($query);
+           $stmt->bindValue(':uid', $value->usuarioID + $i);
+           $stmt->bindValue(':alternativaid', $value->alternativaID + $i);
+           $stmt->bindValue(':tarefaid', $value->tarefaID+ $i);
+           $stmt->bindValue(':comentarios', $value->comentarios .$i);
+           $stmt->bindValue(':avaliacaoid', $value->avaliacaoID + $i);
+           $stmt->bindValue(':perguntaid', $value->perguntaID + $i);
+
+           $p1= $stmt->execute();
+
+
+       }
+
+        //concluir dizendo que a tarefa foi realizada
+        $stmt->closeCursor();
+        $pdo = Connection::connect();
+        $p2 = $pdo->exec("INSERT INTO log_tarefas(tarefa_id, usuario_id, avaliacao_id, status ) values ($tarefaID, $usuarioID, $avaliacaoID, 1)");
+
+        if($p1 && $p2){
+            
+            $data[] = array("log"=>"sucess", "status"=>1);
+        }else{
+
+            $data[] = array("log"=>"sucess", "status"=>2);
+            
+        }
+
+        
+        return json_encode($data);
         
     }
 
 }
 
 
+    /*$json = array();
+
+    for($i=0; $i<10; $i++){
+
+        $json[] = array("alternativaID"=>"999",
+            "avaliacaoID"=>"999",
+            "comentarios"=>"helo teste",
+            "perguntaID"=>"999",
+            "tarefaID"=>"999",
+            "usuarioID"=>"999"
+        );
 
 
-/*
+    }
+
+
+
+
     $a = new API();
-    echo $a->getWEQT();*/
-
+    echo $a->addDiscrepancia(json_decode(json_encode($json)), 999,999,999);
+*/
 
     /*$u = new Usuario();
     $u->foto = "http://www.google.com/rudda.jpg";

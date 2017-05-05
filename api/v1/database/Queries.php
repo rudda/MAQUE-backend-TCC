@@ -33,6 +33,7 @@ class Queries
     public static $GET_PERGUNTAS = "select titulo, descricao, sim, nao, prox, id FROM pergunta";
     public static $GET_SUBPERGUNTAS = "select id, valor, descricao from alternativas where pergunta_id = :id";
     
+    public static $PUT_DISCREPANCIA= "INSERT INTO `discrepancias`(`usuario_id`, `pergunta_id`, `id_alternativa`, `id_tarefa`, `avaliacao_idavaliacao`, `comentario`) VALUES (:uid, :perguntaid, :alternativaid, :tarefaid, :avaliacaoid, :comentarios )";
     
 
 }

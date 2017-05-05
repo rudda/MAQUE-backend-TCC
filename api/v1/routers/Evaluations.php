@@ -1,8 +1,5 @@
 <?php
 namespace Beltrao\WeqtApi\v1\routers;
-use Beltrao\WeqtApi\v1\application\API;
-use Slim\Http\Request;
-use Slim\Http\Response;
 
 /**
  * Created by Rudda Beltrao
