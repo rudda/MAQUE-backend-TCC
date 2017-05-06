@@ -435,46 +435,7 @@ class API
 
         return array();
     }
+
+    
+
 }
-
-
-
-
-
-
-    /*$json = array();
-
-    for($i=0; $i<10; $i++){
-
-        $json[] = array("alternativaID"=>"999",
-            "avaliacaoID"=>"999",
-            "comentarios"=>"helo teste",
-            "perguntaID"=>"999",
-            "tarefaID"=>"999",
-            "usuarioID"=>"999"
-        );
-
-
-    }
-
-
-*/
-
-
-
-
-    /*$u = new Usuario();
-    $u->foto = "http://www.google.com/rudda.jpg";
-    $u->nome = "fulano silva beltrao brito2";
-    $u->email = "b.rudah@gmail.com";
-    $a = new API();
-    $v = $a->addUser($u);
-    echo $v;*/
-
-/*  $a = new API();
-  $ev = new Evaluation();
-  $ev->titulo = "teste api";
-  $ev->info = "http://asdasd.asdas/asdas/asdasd/p.pdf";
-  $ev->tcle = "http://asdasd.asdas/asdas/asdasd/h.pdf";
-  $ev->moderador = 1;
-  echo   $a->addEvaluation($ev);*/
