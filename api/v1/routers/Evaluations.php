@@ -11,6 +11,10 @@ namespace Beltrao\WeqtApi\v1\routers;
  */
 
     
+    use Beltrao\WeqtApi\v1\application\API;
+    use Slim\Http\Request;
+    use Slim\Http\Response;
+
     $app->get('/evaluation', function (Request $request, Response $response, $args){
 
 

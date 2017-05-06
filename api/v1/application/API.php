@@ -301,12 +301,12 @@ class API
 
            $value = $json[$i];
            $stmt = $pdo->prepare($query);
-           $stmt->bindValue(':uid', $value->usuarioID + $i);
-           $stmt->bindValue(':alternativaid', $value->alternativaID + $i);
-           $stmt->bindValue(':tarefaid', $value->tarefaID+ $i);
-           $stmt->bindValue(':comentarios', $value->comentarios .$i);
-           $stmt->bindValue(':avaliacaoid', $value->avaliacaoID + $i);
-           $stmt->bindValue(':perguntaid', $value->perguntaID + $i);
+           $stmt->bindValue(':uid', $value->usuarioID);
+           $stmt->bindValue(':alternativaid', $value->alternativaID);
+           $stmt->bindValue(':tarefaid', $value->tarefaID);
+           $stmt->bindValue(':comentarios', $value->comentarios);
+           $stmt->bindValue(':avaliacaoid', $value->avaliacaoID);
+           $stmt->bindValue(':perguntaid', $value->perguntaID);
 
            $p1= $stmt->execute();
 
@@ -314,7 +314,6 @@ class API
        }
 
         //concluir dizendo que a tarefa foi realizada
-        $stmt->closeCursor();
         $pdo = Connection::connect();
         $p2 = $pdo->exec("INSERT INTO log_tarefas(tarefa_id, usuario_id, avaliacao_id, status ) values ($tarefaID, $usuarioID, $avaliacaoID, 1)");
 
@@ -327,12 +326,120 @@ class API
             
         }
 
-        
+
         return json_encode($data);
         
     }
 
+    public function getDiscrepancias($evaluationID){
+
+        $query  = Queries::$GET_DISCREPANCIAS_GROUP_BY_ASK;
+        $pdo = Connection::connect();
+        $query = str_replace( ':id' , $evaluationID, $query);
+
+        $stmt = $pdo->query($query);
+
+        if($stmt->rowCount()>0){
+
+            while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+                $result['comentario'] = $this->getComentarios($result['avaliacaoID'], $result['perguntaID'], $result['alternativaID'], $result['tarefaID']);
+
+
+                //se o usuario ainda nao votou nessa discrepancia
+                if( $this->votoLog($result['user_id'], $result['perguntaID'], $result['alternativaID'], $result['tarefaID'], $result['avaliacaoID'] ) ==0){
+
+                    $data[] = $result;
+
+                }
+
+
+
+            }
+
+
+            return json_encode($data);
+
+        }else{
+
+
+        }
+
+
+
+    }
+
+    public function votoLog($usuario,$pergunta, $alternativa, $tarefa, $inspecao){
+
+        $query = Queries::$LOG_VOTACAO;
+        $query = str_replace(':usuario', $usuario, $query);
+        $query = str_replace(':pergunta', $pergunta, $query);
+        $query = str_replace(':alternativa', $alternativa, $query);
+        $query = str_replace(':tarefa', $tarefa, $query);
+        $query = str_replace(':avaliacao', $inspecao, $query);
+
+        $pdo = Connection::connect();
+
+        if($pdo && $pdo!= null){
+
+            $stmt =  $pdo->query($query);
+
+
+            if( $stmt->rowCount()>0){
+
+                if($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+                    return $result['log'];
+
+                }else{
+
+                    return -1;
+                }
+
+
+            }else{
+
+                    return -1;
+
+            }
+
+
+        }
+
+
+    }
+
+    public function  getComentarios($avaliacaoID, $perguntaID, $alternativaID, $tarefaID){
+
+
+        $con = Connection::connect();
+        $subQuery = Queries::$GET_COMENTARIOS;
+        $subQuery = str_replace(':avaliacao' , $avaliacaoID  ,$subQuery);
+        $subQuery = str_replace(':pergunta' , $perguntaID  ,$subQuery);
+        $subQuery = str_replace(':alternativa' , $alternativaID  ,$subQuery);
+        $subQuery = str_replace(':tarefa' ,  $tarefaID  ,$subQuery);
+
+        $stm = $con->query($subQuery);
+        if($stm->rowCount()>0){
+
+            while($subresult = $stm->fetch(PDO::FETCH_ASSOC)){
+
+                $subData[] = $subresult;
+
+            }
+
+            return $subData;
+
+
+        }
+
+        return array();
+    }
 }
+
+
+
+
 
 
     /*$json = array();
@@ -351,11 +458,10 @@ class API
     }
 
 
-
-
-    $a = new API();
-    echo $a->addDiscrepancia(json_decode(json_encode($json)), 999,999,999);
 */
+
+
+
 
     /*$u = new Usuario();
     $u->foto = "http://www.google.com/rudda.jpg";

@@ -14,7 +14,8 @@ namespace Beltrao\WeqtApi\v1\database;
 class Queries
 {
     //:id
-    public static $GET_DISCREPANCIAS_GROUP_BY_ASK = 'select (select titulo from pergunta where id = a.pergunta_id) as pergunta,  count( a.id_alternativa)  as qtde,(select valor from alternativas where id = a.id_alternativa) as valor from usuario_has_pergunta as a  WHERE avaliacao_idavaliacao = :id group by a.pergunta_id, a.id_alternativa ';
+    public static $GET_DISCREPANCIAS_GROUP_BY_ASK = 'select usuario_id as user_id,avaliacao_idavaliacao as avaliacaoID, a.id_tarefa as tarefaID, (select nome from tarefas where id = a.id_tarefa) as tarefaNome, a.pergunta_id as perguntaID , a.id_alternativa alternativaID, (select titulo from pergunta where id = a.pergunta_id) as pergunta, count( a.id_alternativa) as qtde,(select valor from alternativas where id = a.id_alternativa) as valor from discrepancias as a WHERE avaliacao_idavaliacao = :id group by a.`id_tarefa`, a.pergunta_id, a.id_alternativa order by a.`id_tarefa` asc';
+    public static $GET_COMENTARIOS = 'select comentario, (select name from usuario where id = a.usuario_id) as displayName,(select profile from usuario where id = a.usuario_id) as profile  from discrepancias as a where avaliacao_idavaliacao = :avaliacao and pergunta_id = :pergunta and id_alternativa = :alternativa and id_tarefa = :tarefa';
 
     public static $PUT_EVALUATION = "INSERT INTO avaliacao (titulo, tcle, doc, moderador) values (:titulo, :tcle, :doc, :moderador)";
 
@@ -34,6 +35,8 @@ class Queries
     public static $GET_SUBPERGUNTAS = "select id, valor, descricao from alternativas where pergunta_id = :id";
     
     public static $PUT_DISCREPANCIA= "INSERT INTO `discrepancias`(`usuario_id`, `pergunta_id`, `id_alternativa`, `id_tarefa`, `avaliacao_idavaliacao`, `comentario`) VALUES (:uid, :perguntaid, :alternativaid, :tarefaid, :avaliacaoid, :comentarios )";
-    
+ 
+    public static $LOG_VOTACAO = 'SELECT count(*) as log FROM log_votacao WHERE `usuario_id` = :usuario and `pergunta_id` = :pergunta and `alternativa_id` = :alternativa and `tarefa_id` = :tarefa and `avaliacao_idavaliacao` = :avaliacao';
+   
 
 }

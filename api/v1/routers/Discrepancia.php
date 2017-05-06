@@ -15,10 +15,6 @@ namespace Beltrao\WeqtApi\v1\routers;
     use Slim\Http\Request;
     use Slim\Http\Response;
 
-    $app->get('/discrepancias', function (Request $request, Response $response, $args){
-
-
-    });
     $app->post('/discrepancias', function(Request $request, Response $response, $args){
 
         $json = $request->getParam('discrepancias_json');
@@ -26,16 +22,31 @@ namespace Beltrao\WeqtApi\v1\routers;
         $uID = $request->getParam('u_id');
         $avaliacaoID = $request->getParam('avaliacao_id');
 
+
         $api = new API();
-        $resposta = $api->addDiscrepancia(json_decode($json), $uID, $avaliacaoID, $tarefaID);
-        
-        $response->write($resposta);
-        
+
+        //$response->write(  json_decode( stripslashes($json) )  );
+
+        try{
+            $j = json_decode(stripslashes($json));
+            $response->write(
+                $api->addDiscrepancia($j, $tarefaID, $uID, $avaliacaoID));
+
+        }catch (\Exception $x){
+
+            $data[] = array("log"=>"sucess", "status"=>2);
+            $response->write(json_encode($data));
+        }
+
     });
     
-    $app->put('/discrepancia', function(Request $request, Response $response, $args){
-    
-    
-    
+    $app->get('/discrepancias', function(Request $request, Response $response, $args){
+
+        
+        $id = $request->getParam("id");
+        $a = new API();
+        echo $a->getDiscrepancias($id);
+
+
     });
     
