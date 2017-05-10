@@ -14,13 +14,14 @@ use Slim\App;
  */
 
     require __DIR__.'/../../vendor/autoload.php';
-
+    
     $app = new App();
     include 'routers/Evaluations.php';
     include 'routers/Discrepancia.php';
     include 'routers/Defeitos.php';
     include 'routers/WEQT.php';
     include "routers/Usuario.php";
+    include 'routers/Votar.php';
 
     $app->run();  
     

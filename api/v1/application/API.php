@@ -21,18 +21,18 @@ class API
          
         $db = Connection::connect();
         $query = Queries::$PUT_EVALUATION;
-        
+
         if($db != null && $db!= false){
-            
+
             $stmt = $db->prepare($query);
-            
+
             $stmt->bindValue(":titulo", $evaluation->titulo);
             $stmt->bindValue(":tcle", $evaluation->tcle);
             $stmt->bindValue(":moderador", $evaluation->moderador);
             $stmt->bindValue(":doc", $evaluation->info);
 
             return $stmt->execute();
-            
+
         }
 
         return false;
@@ -61,7 +61,7 @@ class API
                 $query = str_replace(':name', "'".$u->nome."'", $query);
                 $query = str_replace(':email', "'".$u->email."'", $query);
 
-                
+
                 $result = $db->query($query);
 
                 if($u = $result->fetch(PDO::FETCH_ASSOC)){
@@ -69,12 +69,12 @@ class API
                    $data[] = $u;
                     return json_encode($data);
                 }else{
-                    
+
                     return 0;
                 }
 
 
-                
+
             }
 
 
@@ -114,7 +114,7 @@ class API
 
             }
 
-            
+
         }
 
         return false;
@@ -123,13 +123,13 @@ class API
     public function getInvites($user_id){
         $query = Queries::$GET_INVITES;
         $query = str_replace(':id',$user_id, $query);
-        
+
         $db = Connection::connect();
-        
+
         if($db && $db!= null){
-            
+
             $stmt = $db->query($query);
-            
+
 
             while($dados = $stmt->fetch(PDO::FETCH_ASSOC)){
 
@@ -146,9 +146,10 @@ class API
             return json_encode($data);
 
         }
-        
-        
+
+
     }
+
     public function UpdateInvites($userId, $evaluationId, $status){
 
         $query = Queries::$POST_INVITE;
@@ -239,27 +240,27 @@ class API
     }
 
     public function getWEQT(){
-        
+
         $query = Queries::$GET_PERGUNTAS;
         $db = Connection::connect();
-        
+
         if($db && $db!= null){
-            
+
             $stmt = $db->query($query);
-            
+
             while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
-                
+
                 $result['alternativas'] = $this->getSubPerguntas($result['id']);
                 $pergunta[] = $result;
-            
+
             }
             //    echo json_encode($pergunta);
-            
+
 
             return json_encode($pergunta);
-            
+
         }
-        
+
     }
 
     public function getSubPerguntas($id){
@@ -287,7 +288,7 @@ class API
             }
 
         }
-        
+
     }
 
     public function addDiscrepancia($json, $tarefaID, $usuarioID, $avaliacaoID){
@@ -296,7 +297,7 @@ class API
         $query = Queries::$PUT_DISCREPANCIA;
         $p1 = true;
         $p2 = true;
-        
+
        for($i=0; $i< count($json); $i++){
 
            $value = $json[$i];
@@ -318,17 +319,17 @@ class API
         $p2 = $pdo->exec("INSERT INTO log_tarefas(tarefa_id, usuario_id, avaliacao_id, status ) values ($tarefaID, $usuarioID, $avaliacaoID, 1)");
 
         if($p1 && $p2){
-            
+
             $data[] = array("log"=>"sucess", "status"=>1);
         }else{
 
             $data[] = array("log"=>"sucess", "status"=>2);
-            
+
         }
 
 
         return json_encode($data);
-        
+
     }
 
     public function getDiscrepancias($evaluationID){
@@ -436,6 +437,53 @@ class API
         return array();
     }
 
+
+    public function setDefeito($user, $avaliacao,$tarefa, $pergunta, $alternativa, $voto, $prioridade){
+        //(:usuario, :avaliacao, :tarefa, :pergunta, :alternativa, :voto, :prioridade)
+
+        $query = Queries::$SET_DEFEITO;
+
+
+        $pdo = Connection::connect();
+
+            $query = str_replace(':usuario', $user, $query);
+            $query = str_replace(':avaliacao', $avaliacao, $query);
+            $query = str_replace(':tarefa', $tarefa, $query);
+            $query = str_replace(':pergunta', $pergunta, $query);
+            $query = str_replace(':alternativa', $alternativa, $query);
+            $query = str_replace(':voto', $voto, $query);
+            $query = str_replace(':prioridade', $prioridade, $query);
+
+
+
+               $p = $pdo->exec($query);
+
+                if($p){
+
+
+                    $resposta[] = array("log" => "sucess", "status" => 1);
+                    return json_encode($resposta);
+
+                }
+                else{
+
+                    $resposta[] = array("log" => "sucess", "status" => 2);
+                    return json_encode($resposta);
+                }
+
+
+
+
+
+
+    }
     
 
+
 }
+
+
+   // $api = new API();
+    //echo $api->setDefeito(1,1,1,1,1,1,1);
+
+
