@@ -26,19 +26,22 @@ class Queries
     public static $GET_INVITES = 'SELECT b.titulo as title, b.descricao, (select profile from usuario where usuario.id = a.usuario_id) as fromProfile,(select email from usuario where usuario.id = a.usuario_id) as fromEmail, b.tcle, b.doc, b.idavaliacao as idOfEvaluation, b.data_criacao as criacao  FROM cx_entrada as a inner join avaliacao  as b where a.usuario_id = :id and a.status_avaliacao = 0 and b.idavaliacao = a.avaliacao_idavaliacao';
     public static $POST_INVITE = 'UPDATE cx_entrada SET status_avaliacao= :status WHERE avaliacao_idavaliacao = :id_avaliacao and usuario_id= :usuario_id';
 
-    
+
     public static $GET_EVALUATION_OPENED = 'SELECT b.titulo as title, b.descricao, (select profile from usuario where usuario.id = a.usuario_id) as fromProfile, b.idavaliacao as idOfEvaluation, b.data_criacao as criacao  FROM cx_entrada as a inner join avaliacao  as b where a.usuario_id = :id and a.status_avaliacao = 1 and b.idavaliacao = a.avaliacao_idavaliacao';
     public static $GET_EVALUATION_CLOSED = "SELECT * FROM cx_entrada where usuario_id = :id and status = 2";
-    
+
     public static $GET_TAREFAS = 'select id, nome as title,  desc_tarefa as descricao, avaliacao_idavaliacao as avaliacaoID from tarefas where avaliacao_idavaliacao = :id';
     public static $GET_PERGUNTAS = "select titulo, descricao, sim, nao, prox, id FROM pergunta";
     public static $GET_SUBPERGUNTAS = "select id, valor, descricao from alternativas where pergunta_id = :id";
-    
-    public static $PUT_DISCREPANCIA= "INSERT INTO `discrepancias`(`usuario_id`, `pergunta_id`, `id_alternativa`, `id_tarefa`, `avaliacao_idavaliacao`, `comentario`) VALUES (:uid, :perguntaid, :alternativaid, :tarefaid, :avaliacaoid, :comentarios )";
- 
-    public static $LOG_VOTACAO = 'SELECT count(*) as log FROM log_votacao WHERE `usuario_id` = :usuario and `pergunta_id` = :pergunta and `alternativa_id` = :alternativa and `tarefa_id` = :tarefa and `avaliacao_idavaliacao` = :avaliacao';
-   public static $SET_DEFEITO = 'INSERT INTO `log_votacao`(`usuario_id`, `avaliacao_idavaliacao`, `tarefa_id`, `pergunta_id`, `alternativa_id`, `voto`, `prioridade`) VALUES (:usuario, :avaliacao, :tarefa, :pergunta, :alternativa, :voto, :prioridade)';
 
-    public static $GET_ERROS = 'SELECT (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) as sim, (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =0 ) as nao, (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) as total, (select valor from alternativas where id = l.alternativa_id) as titulo FROM `log_votacao` as l where `avaliacao_idavaliacao` =1 group by alternativa_id';
+    public static $PUT_DISCREPANCIA = "INSERT INTO `discrepancias`(`usuario_id`, `pergunta_id`, `id_alternativa`, `id_tarefa`, `avaliacao_idavaliacao`, `comentario`) VALUES (:uid, :perguntaid, :alternativaid, :tarefaid, :avaliacaoid, :comentarios )";
+
+    public static $LOG_VOTACAO = 'SELECT count(*) as log FROM log_votacao WHERE `usuario_id` = :usuario and `pergunta_id` = :pergunta and `alternativa_id` = :alternativa and `tarefa_id` = :tarefa and `avaliacao_idavaliacao` = :avaliacao';
+    public static $SET_DEFEITO = 'INSERT INTO `log_votacao`(`usuario_id`, `avaliacao_idavaliacao`, `tarefa_id`, `pergunta_id`, `alternativa_id`, `voto`, `prioridade`) VALUES (:usuario, :avaliacao, :tarefa, :pergunta, :alternativa, :voto, :prioridade)';
+
+    //id
+    public static $GET_ERROS = 'SELECT (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) as sim, (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =0 ) as nao, (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) as total, (select nome from tarefas where id =l.tarefa_id) as tarefaNome, (select valor from alternativas where id = l.alternativa_id) as titulo, ( (select sum(prioridade) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) / (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) ) as prioridade FROM `log_votacao` as l where `avaliacao_idavaliacao` = :id group by `alternativa_id` order by `tarefa_id` asc';
+
     public static $GET_PRIORIDADE = 'SELECT (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) as sim, (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =0 ) as nao, ( select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) as total, ( (select sum(prioridade) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) / (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) ) as prioridade, (select valor from alternativas where id = l.alternativa_id) as titulo FROM `log_votacao` as l where `avaliacao_idavaliacao` =1 group by alternativa_id';
+
 }

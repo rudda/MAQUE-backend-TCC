@@ -13,7 +13,10 @@
     
     $app->get('/defeito', function (Request $request, Response $response, $args){
     
-    
+        $id = $request->getParam('id');
+        
+        
+        
     
     });
     

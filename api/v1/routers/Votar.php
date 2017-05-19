@@ -26,8 +26,5 @@
         $response->write(
             $api->setDefeito($user, $avaliacao, $tarefa, $pergunta, $alternativa, $voto, $prioridade));
         
-        
-
-
     });
 

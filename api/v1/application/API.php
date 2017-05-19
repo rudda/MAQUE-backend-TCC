@@ -437,7 +437,6 @@ class API
         return array();
     }
 
-
     public function setDefeito($user, $avaliacao,$tarefa, $pergunta, $alternativa, $voto, $prioridade){
         //(:usuario, :avaliacao, :tarefa, :pergunta, :alternativa, :voto, :prioridade)
 
@@ -478,12 +477,40 @@ class API
 
     }
     
+    public function getDefeitos($evaluationID){
+        
+        $query = Queries::$GET_ERROS;
+        $pdo  = Connection::connect();
+
+        if($pdo && $pdo != null){
+
+            $stmt = $pdo->prepare($query);
+            $stmt->bindParam(':id', $evaluationID, PDO::PARAM_STR);
+
+            if($stmt->execute()){
+
+                while ($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+                    $data[] = $result;
+                }
+
+                return json_encode($data);
+            }else{
+
+                return false;
+            }
 
 
+        }
+
+        return false;
+        
+    }
+
+    
 }
 
 
-   // $api = new API();
-    //echo $api->setDefeito(1,1,1,1,1,1,1);
-
+    $api = new API();
+    echo $api->getDefeitos('1');
 

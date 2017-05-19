@@ -13,9 +13,9 @@ namespace Beltrao\WeqtApi\v1\database;
 use PDO;
 class Connection
 {
-    public static $DATABASE_NAME= "pibic";
-    public static $DATABASE_PASS= "";
-    public static $DATABASE_USER= "root";
+    public static $DATABASE_NAME= "lab31487_weqt";
+    public static $DATABASE_PASS= "meganfox123";
+    public static $DATABASE_USER= "lab31487_weqt";
     public static $DATABASE_PORT="80";
     public static $DATABASE_HOST= "localhost";
 
