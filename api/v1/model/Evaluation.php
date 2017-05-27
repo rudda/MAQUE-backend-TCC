@@ -25,7 +25,7 @@ class Evaluation
     private $discrepancias;
     private $defeitos;
     private $colaboradores;
-    
+    private $tarefas;
 
     public function __construct()
     {
@@ -39,7 +39,7 @@ class Evaluation
         $this->discrepancias = array();
         $this->colaboradores = array();
         $this->defeitos = array();
-        
+        $this->tarefas = array();
     }
 
     
@@ -60,6 +60,10 @@ class Evaluation
         array_push($this->defeitos, $defeito);
         
     }
+
+   
+
+
 
     /*getters and setters*/
 
@@ -111,8 +115,24 @@ class Evaluation
     {
         return $this->colaboradores;
     }
+
+    /**
+     * @return array
+     */
+    public function getTarefas()
+    {
+        return $this->tarefas;
+    }
+
+    /**
+     * @param array $tarefas
+     */
+    public function setTarefas($tarefas)
+    {
+        $this->tarefas = $tarefas;
+    }
     
-    
+     
     
     
     
