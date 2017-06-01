@@ -20,25 +20,14 @@ namespace Beltrao\WeqtApi\v1\routers;
     $app->post('/usuario', function (Request $request, Response $response, $args){
 
         $usuario = new Usuario();
-        $usuario->nome = $request->getParam("u_name");
-        $usuario->foto = $request->getParam("u_foto");
-        $usuario->email = $request->getParam("u_email");
+        $usuario->nome = $request->getParam('u_name');
+        $usuario->foto = $request->getParam('u_foto');
+        $usuario->email = $request->getParam('u_email');
 
         $api = new API();
-        if($api->addUser($usuario)!= 0){
 
-            $response->write($api->addUser($usuario));
+        $response->write($api->addUser($usuario));
 
-        }else{
-            $usuario->id = 0;
-            $resposta[] = $usuario;
-
-            $response->write(json_encode($resposta));
-
-        }
-
-
-        
 
     });
     
@@ -48,11 +37,12 @@ namespace Beltrao\WeqtApi\v1\routers;
         $u->nome = $request->getParam('u_name');
         $u->email = $request->getParam('u_email');
 
-         
+
         $api = new API();
         $response->write($api->login($u));
 
 
         
     });
+
 

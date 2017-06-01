@@ -94,34 +94,53 @@ class API
             $stmt->bindValue(":profile", $u->foto);
 
 
-            if ($stmt->execute()) {
 
-                $stmt->closeCursor();
+            try{
+                if ($stmt->execute()) {
 
-                $db = Connection::connect();
-                $query = 'select * from usuario where name = :name and email = :email';
-                $query = str_replace(':name', "'" . $u->nome . "'", $query);
-                $query = str_replace(':email', "'" . $u->email . "'", $query);
+                    $stmt->closeCursor();
+
+                    $db = Connection::connect();
+                    $query = 'select u_name AS nome,  email, profile as foto, id from usuario where u_name = :name and email = :email';
+                    $query = str_replace(':name', "'" . $u->nome . "'", $query);
+                    $query = str_replace(':email', "'" . $u->email . "'", $query);
+
+                    $result = $db->query($query);
+
+                    if ($u = $result->fetch(PDO::FETCH_ASSOC)) {
+
+                        $data[] = $u;
+                        return json_encode($data);
+                    } else {
+                        $u->id = 0;
+                        $u->email = "erro else";
+                        $data[] = $u;
+                        return json_encode($data);
 
 
-                $result = $db->query($query);
+                    }
 
-                if ($u = $result->fetch(PDO::FETCH_ASSOC)) {
 
-                    $data[] = $u;
-                    return json_encode($data);
-                } else {
 
-                    return 0;
                 }
 
 
-            }
+
+            }catch (\Exception $e){
+
+                $u->id = 0;
+                $u->email = "try  ";
+                $data[] = $u;
+                return json_encode($data);
+
+              }
 
 
         }
 
-        return false;
+        $u->id = 0;
+        $data[] = $u;
+        return json_encode($data);
 
     }
 
@@ -149,7 +168,7 @@ class API
 
             } else {
 
-                $u->id = 90;
+                $u->id = 0;
                 $data[] = $u;
                 return json_encode($data);
 
@@ -260,6 +279,52 @@ class API
 
     }
 
+    public function getMyEvaluation($id){
+
+        $query = Queries::$GET_MY_EVALUATIONS;
+        $pdo = Connection::connect();
+
+
+
+        if($pdo && $pdo!= null){
+
+            $query = str_replace(":id", $id, $query);
+
+            $stmt = $pdo->query($query);
+            $data = array();
+            while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+
+                $data[] = $result;
+
+
+            }
+            if($data != null && count($data) > 0){
+
+                return json_encode($data);
+
+            }else{
+
+                $data[] = array("LOG"=>"erro", "status"=> 100);
+                return json_encode($data);
+
+
+            }
+
+
+
+        }else{
+
+            $data[] = array("LOG"=>"erro", "status"=> 100);
+            return json_encode($data);
+
+        }
+
+
+
+
+
+    }
     public function getTarefa($idOfEvaluation)
     {
 
@@ -524,7 +589,7 @@ class API
     public function getDefeitos($evaluationID)
     {
 
-        $query = Queries::$GET_ERROS;
+        $query = Queries::$GET_PRIORIDADE;
         $pdo = Connection::connect();
 
         if ($pdo && $pdo != null) {
@@ -575,5 +640,9 @@ class API
     
 
 }
+
+
+
+
 
 

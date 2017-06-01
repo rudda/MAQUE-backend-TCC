@@ -42,6 +42,10 @@ $app->get('/evaluation', function (Request $request, Response $response, $args) 
         //Minhas Inspeções  - com dados a serem mostrados
         case 3:
 
+            $api = new API();
+            $response->write($api->getMyEvaluation($id));
+
+
             break;
         default:
             break;
@@ -62,10 +66,8 @@ $app->post('/evaluation', function (Request $request, Response $response, $args)
             $user_id = $request->getParam('usuario_id');
             $status = $request->getParam('status');
 
-
             $api = new API();
             $response->write($api->UpdateInvites($user_id, $avaliacao_id, $status));
-
 
             break;
         case 2:
@@ -90,6 +92,7 @@ $app->post('/evaluation', function (Request $request, Response $response, $args)
                         $evaluation->descricao = $request->getParam('descricao');
                         $evaluation->setTarefas(json_decode($request->getParams('tarefas')));
                         $evaluation->tcle = $path.$tcleName;
+                        $evaluation->info = $path.$docName;
 
                         if ($api->addEvaluation($evaluation)) {
 
@@ -111,6 +114,9 @@ $app->post('/evaluation', function (Request $request, Response $response, $args)
 
 
             break;
+
+
+
 
              default:
               break;

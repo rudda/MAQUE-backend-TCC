@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1facb04c-cacc-4f8d-ba24-8795876dac42" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/.htaccess" afterPath="$PROJECT_DIR$/api/v1/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/application/API.php" afterPath="$PROJECT_DIR$/api/v1/application/API.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/database/Connection.php" afterPath="$PROJECT_DIR$/api/v1/database/Connection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/database/Queries.php" afterPath="$PROJECT_DIR$/api/v1/database/Queries.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/index.php" afterPath="$PROJECT_DIR$/api/v1/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/model/Evaluation.php" afterPath="$PROJECT_DIR$/api/v1/model/Evaluation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/routers/Defeitos.php" afterPath="$PROJECT_DIR$/api/v1/routers/Defeitos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/routers/Evaluations.php" afterPath="$PROJECT_DIR$/api/v1/routers/Evaluations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/v1/routers/Usuario.php" afterPath="$PROJECT_DIR$/api/v1/routers/Usuario.php" />
     </list>
     <ignored path="weqt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,113 +34,63 @@
       <file leaf-file-name="Queries.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/v1/database/Queries.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" column="144" selection-start-line="19" selection-start-column="144" selection-end-line="19" selection-end-column="144" />
-              <folding>
-                <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-                <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-                <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-                <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-                <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-                <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-                <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-                <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-                <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-                <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-                <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-                <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-                <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-                <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-                <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-                <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-                <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-                <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-                <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-                <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-                <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-                <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-                <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-                <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-                <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-                <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-                <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-                <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-                <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-                <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-                <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="API.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/v1/application/API.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1371">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#48#88#0#PHP" expanded="true" />
-                <element signature="e#2222#3259#0#PHP" expanded="false" />
-                <element signature="e#3265#3934#0#PHP" expanded="false" />
-                <element signature="e#3940#4482#0#PHP" expanded="false" />
-                <element signature="e#4488#5135#0#PHP" expanded="false" />
-                <element signature="e#5141#5978#0#PHP" expanded="false" />
-                <element signature="e#5984#6429#0#PHP" expanded="false" />
-                <element signature="e#6435#6932#0#PHP" expanded="false" />
-                <element signature="e#6938#7505#0#PHP" expanded="false" />
-                <element signature="e#7511#8745#0#PHP" expanded="false" />
-                <element signature="e#8751#9639#0#PHP" expanded="false" />
-                <element signature="e#9645#10513#0#PHP" expanded="false" />
-                <element signature="e#10519#11252#0#PHP" expanded="false" />
-                <element signature="e#11258#12274#0#PHP" expanded="false" />
-                <element signature="e#12280#12869#0#PHP" expanded="false" />
-                <element signature="e#12875#13258#0#PHP" expanded="false" />
-                <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-                <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-                <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/database/Connection.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Evaluations.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/routers/Evaluations.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WEQT.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/routers/WEQT.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
-              <folding />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+                <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+                <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+                <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+                <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+                <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+                <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+                <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+                <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+                <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+                <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+                <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+                <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+                <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+                <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+                <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+                <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+                <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+                <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+                <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+                <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+                <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+                <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+                <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+                <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+                <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+                <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+                <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+                <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+                <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+                <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+                <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+                <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+                <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+                <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+                <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+                <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+                <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+                <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+                <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+                <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,19 +98,61 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/v1/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="196">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Defeitos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/routers/Defeitos.php">
+      <file leaf-file-name="Evaluations.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/v1/routers/Evaluations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="50">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="API.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/v1/application/API.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2390">
+              <caret line="643" column="0" selection-start-line="643" selection-start-column="0" selection-end-line="643" selection-end-column="0" />
+              <folding>
+                <element signature="e#48#88#0#PHP" expanded="true" />
+                <element signature="e#3774#4442#0#PHP" expanded="false" />
+                <element signature="e#4448#4990#0#PHP" expanded="false" />
+                <element signature="e#4996#5643#0#PHP" expanded="false" />
+                <element signature="e#5649#6486#0#PHP" expanded="false" />
+                <element signature="e#6492#7270#0#PHP" expanded="false" />
+                <element signature="e#7275#7720#0#PHP" expanded="false" />
+                <element signature="e#7726#8223#0#PHP" expanded="false" />
+                <element signature="e#8229#8796#0#PHP" expanded="false" />
+                <element signature="e#8802#10036#0#PHP" expanded="false" />
+                <element signature="e#10042#10930#0#PHP" expanded="false" />
+                <element signature="e#10936#11804#0#PHP" expanded="false" />
+                <element signature="e#11810#12543#0#PHP" expanded="false" />
+                <element signature="e#12549#13565#0#PHP" expanded="false" />
+                <element signature="e#13571#14165#0#PHP" expanded="false" />
+                <element signature="e#14171#14554#0#PHP" expanded="false" />
+                <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+                <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+                <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/v1/routers/Usuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <folding>
+                <element signature="e#221#260#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,6 +164,7 @@
       <command text="composer.json" />
       <command text="composer " />
       <command text="composer dumpautoload -o" />
+      <command text="git status" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -186,17 +180,18 @@
         <option value="$PROJECT_DIR$/api/v1/model/Discrepancia.php" />
         <option value="$PROJECT_DIR$/api/v1/routers/usuario.php" />
         <option value="$PROJECT_DIR$/api/v1/model/Usuario.php" />
-        <option value="$PROJECT_DIR$/api/v1/routers/Usuario.php" />
         <option value="$PROJECT_DIR$/api/v1/routers/WEQT.php" />
         <option value="$PROJECT_DIR$/api/v1/routers/Discrepancia.php" />
         <option value="$PROJECT_DIR$/api/v1/routers/Votar.php" />
-        <option value="$PROJECT_DIR$/api/v1/routers/Defeitos.php" />
         <option value="$PROJECT_DIR$/api/v1/model/Evaluation.php" />
-        <option value="$PROJECT_DIR$/api/v1/database/Connection.php" />
         <option value="$PROJECT_DIR$/api/v1/index.php" />
-        <option value="$PROJECT_DIR$/api/v1/routers/Evaluations.php" />
+        <option value="$PROJECT_DIR$/api/v1/.htaccess" />
+        <option value="$PROJECT_DIR$/api/v1/database/Connection.php" />
+        <option value="$PROJECT_DIR$/api/v1/routers/Defeitos.php" />
         <option value="$PROJECT_DIR$/api/v1/database/Queries.php" />
+        <option value="$PROJECT_DIR$/api/v1/routers/Usuario.php" />
         <option value="$PROJECT_DIR$/api/v1/application/API.php" />
+        <option value="$PROJECT_DIR$/api/v1/routers/Evaluations.php" />
       </list>
     </option>
   </component>
@@ -213,8 +208,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1040" />
-    <option name="height" value="803" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -241,10 +236,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -329,7 +324,11 @@
       <workItem from="1495495472301" duration="18246000" />
       <workItem from="1495667729497" duration="1650000" />
       <workItem from="1495770867974" duration="7215000" />
-      <workItem from="1495914066924" duration="5336000" />
+      <workItem from="1495914066924" duration="8112000" />
+      <workItem from="1495946829193" duration="11871000" />
+      <workItem from="1496089697532" duration="13235000" />
+      <workItem from="1496107025824" duration="2430000" />
+      <workItem from="1496326276176" duration="2032000" />
     </task>
     <task id="LOCAL-00001" summary="add method addDiscrepancia">
       <created>1493974109097</created>
@@ -370,34 +369,57 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142616000" />
+    <option name="totallyTimeSpent" value="174960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="803" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21679688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34703946" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8322368" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.83208394" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34703946" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.83208394" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -430,24 +452,24 @@
           <caret line="256" column="12" selection-start-line="256" selection-start-column="12" selection-end-line="256" selection-end-column="12" />
           <folding>
             <element signature="e#48#88#0#PHP" expanded="true" />
-            <element signature="e#2222#3259#0#PHP" expanded="false" />
-            <element signature="e#3265#3934#0#PHP" expanded="false" />
-            <element signature="e#3940#4482#0#PHP" expanded="false" />
-            <element signature="e#4488#5135#0#PHP" expanded="false" />
-            <element signature="e#5141#5978#0#PHP" expanded="false" />
-            <element signature="e#5984#6429#0#PHP" expanded="false" />
-            <element signature="e#6435#6932#0#PHP" expanded="false" />
-            <element signature="e#6938#7505#0#PHP" expanded="false" />
-            <element signature="e#7511#8745#0#PHP" expanded="false" />
-            <element signature="e#8751#9639#0#PHP" expanded="false" />
-            <element signature="e#9645#10513#0#PHP" expanded="false" />
-            <element signature="e#10519#11252#0#PHP" expanded="false" />
-            <element signature="e#11258#12274#0#PHP" expanded="false" />
-            <element signature="e#12280#12869#0#PHP" expanded="false" />
-            <element signature="e#12875#13258#0#PHP" expanded="false" />
-            <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-            <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-            <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
+            <element signature="e#3774#4442#0#PHP" expanded="false" />
+            <element signature="e#4448#4990#0#PHP" expanded="false" />
+            <element signature="e#4996#5643#0#PHP" expanded="false" />
+            <element signature="e#5649#6486#0#PHP" expanded="false" />
+            <element signature="e#6492#7270#0#PHP" expanded="false" />
+            <element signature="e#7275#7720#0#PHP" expanded="false" />
+            <element signature="e#7726#8223#0#PHP" expanded="false" />
+            <element signature="e#8229#8796#0#PHP" expanded="false" />
+            <element signature="e#8802#10036#0#PHP" expanded="false" />
+            <element signature="e#10042#10930#0#PHP" expanded="false" />
+            <element signature="e#10936#11804#0#PHP" expanded="false" />
+            <element signature="e#11810#12543#0#PHP" expanded="false" />
+            <element signature="e#12549#13565#0#PHP" expanded="false" />
+            <element signature="e#13571#14165#0#PHP" expanded="false" />
+            <element signature="e#14171#14554#0#PHP" expanded="false" />
+            <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+            <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+            <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
           </folding>
         </state>
       </provider>
@@ -457,49 +479,59 @@
         <state relative-caret-position="650">
           <caret line="33" column="108" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="108" />
           <folding>
-            <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-            <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-            <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-            <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-            <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-            <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-            <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-            <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-            <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-            <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+            <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+            <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+            <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+            <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+            <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+            <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+            <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+            <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+            <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
           </folding>
         </state>
       </provider>
@@ -517,24 +549,24 @@
           <caret line="199" column="31" selection-start-line="199" selection-start-column="31" selection-end-line="199" selection-end-column="31" />
           <folding>
             <element signature="e#48#88#0#PHP" expanded="true" />
-            <element signature="e#2222#3259#0#PHP" expanded="false" />
-            <element signature="e#3265#3934#0#PHP" expanded="false" />
-            <element signature="e#3940#4482#0#PHP" expanded="false" />
-            <element signature="e#4488#5135#0#PHP" expanded="false" />
-            <element signature="e#5141#5978#0#PHP" expanded="false" />
-            <element signature="e#5984#6429#0#PHP" expanded="false" />
-            <element signature="e#6435#6932#0#PHP" expanded="false" />
-            <element signature="e#6938#7505#0#PHP" expanded="false" />
-            <element signature="e#7511#8745#0#PHP" expanded="false" />
-            <element signature="e#8751#9639#0#PHP" expanded="false" />
-            <element signature="e#9645#10513#0#PHP" expanded="false" />
-            <element signature="e#10519#11252#0#PHP" expanded="false" />
-            <element signature="e#11258#12274#0#PHP" expanded="false" />
-            <element signature="e#12280#12869#0#PHP" expanded="false" />
-            <element signature="e#12875#13258#0#PHP" expanded="false" />
-            <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-            <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-            <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
+            <element signature="e#3774#4442#0#PHP" expanded="false" />
+            <element signature="e#4448#4990#0#PHP" expanded="false" />
+            <element signature="e#4996#5643#0#PHP" expanded="false" />
+            <element signature="e#5649#6486#0#PHP" expanded="false" />
+            <element signature="e#6492#7270#0#PHP" expanded="false" />
+            <element signature="e#7275#7720#0#PHP" expanded="false" />
+            <element signature="e#7726#8223#0#PHP" expanded="false" />
+            <element signature="e#8229#8796#0#PHP" expanded="false" />
+            <element signature="e#8802#10036#0#PHP" expanded="false" />
+            <element signature="e#10042#10930#0#PHP" expanded="false" />
+            <element signature="e#10936#11804#0#PHP" expanded="false" />
+            <element signature="e#11810#12543#0#PHP" expanded="false" />
+            <element signature="e#12549#13565#0#PHP" expanded="false" />
+            <element signature="e#13571#14165#0#PHP" expanded="false" />
+            <element signature="e#14171#14554#0#PHP" expanded="false" />
+            <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+            <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+            <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
           </folding>
         </state>
       </provider>
@@ -551,49 +583,59 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-            <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-            <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-            <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-            <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-            <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-            <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-            <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-            <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-            <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+            <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+            <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+            <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+            <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+            <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+            <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+            <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+            <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+            <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
           </folding>
         </state>
       </provider>
@@ -618,24 +660,24 @@
           <caret line="163" column="2" selection-start-line="163" selection-start-column="0" selection-end-line="165" selection-end-column="38" />
           <folding>
             <element signature="e#48#88#0#PHP" expanded="true" />
-            <element signature="e#2222#3259#0#PHP" expanded="false" />
-            <element signature="e#3265#3934#0#PHP" expanded="false" />
-            <element signature="e#3940#4482#0#PHP" expanded="false" />
-            <element signature="e#4488#5135#0#PHP" expanded="false" />
-            <element signature="e#5141#5978#0#PHP" expanded="false" />
-            <element signature="e#5984#6429#0#PHP" expanded="false" />
-            <element signature="e#6435#6932#0#PHP" expanded="false" />
-            <element signature="e#6938#7505#0#PHP" expanded="false" />
-            <element signature="e#7511#8745#0#PHP" expanded="false" />
-            <element signature="e#8751#9639#0#PHP" expanded="false" />
-            <element signature="e#9645#10513#0#PHP" expanded="false" />
-            <element signature="e#10519#11252#0#PHP" expanded="false" />
-            <element signature="e#11258#12274#0#PHP" expanded="false" />
-            <element signature="e#12280#12869#0#PHP" expanded="false" />
-            <element signature="e#12875#13258#0#PHP" expanded="false" />
-            <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-            <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-            <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
+            <element signature="e#3774#4442#0#PHP" expanded="false" />
+            <element signature="e#4448#4990#0#PHP" expanded="false" />
+            <element signature="e#4996#5643#0#PHP" expanded="false" />
+            <element signature="e#5649#6486#0#PHP" expanded="false" />
+            <element signature="e#6492#7270#0#PHP" expanded="false" />
+            <element signature="e#7275#7720#0#PHP" expanded="false" />
+            <element signature="e#7726#8223#0#PHP" expanded="false" />
+            <element signature="e#8229#8796#0#PHP" expanded="false" />
+            <element signature="e#8802#10036#0#PHP" expanded="false" />
+            <element signature="e#10042#10930#0#PHP" expanded="false" />
+            <element signature="e#10936#11804#0#PHP" expanded="false" />
+            <element signature="e#11810#12543#0#PHP" expanded="false" />
+            <element signature="e#12549#13565#0#PHP" expanded="false" />
+            <element signature="e#13571#14165#0#PHP" expanded="false" />
+            <element signature="e#14171#14554#0#PHP" expanded="false" />
+            <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+            <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+            <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
           </folding>
         </state>
       </provider>
@@ -652,49 +694,59 @@
         <state relative-caret-position="550">
           <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-            <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-            <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-            <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-            <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-            <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-            <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-            <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-            <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-            <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+            <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+            <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+            <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+            <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+            <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+            <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+            <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+            <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+            <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
           </folding>
         </state>
       </provider>
@@ -705,24 +757,24 @@
           <caret line="163" column="2" selection-start-line="163" selection-start-column="0" selection-end-line="165" selection-end-column="38" />
           <folding>
             <element signature="e#48#88#0#PHP" expanded="true" />
-            <element signature="e#2222#3259#0#PHP" expanded="false" />
-            <element signature="e#3265#3934#0#PHP" expanded="false" />
-            <element signature="e#3940#4482#0#PHP" expanded="false" />
-            <element signature="e#4488#5135#0#PHP" expanded="false" />
-            <element signature="e#5141#5978#0#PHP" expanded="false" />
-            <element signature="e#5984#6429#0#PHP" expanded="false" />
-            <element signature="e#6435#6932#0#PHP" expanded="false" />
-            <element signature="e#6938#7505#0#PHP" expanded="false" />
-            <element signature="e#7511#8745#0#PHP" expanded="false" />
-            <element signature="e#8751#9639#0#PHP" expanded="false" />
-            <element signature="e#9645#10513#0#PHP" expanded="false" />
-            <element signature="e#10519#11252#0#PHP" expanded="false" />
-            <element signature="e#11258#12274#0#PHP" expanded="false" />
-            <element signature="e#12280#12869#0#PHP" expanded="false" />
-            <element signature="e#12875#13258#0#PHP" expanded="false" />
-            <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-            <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-            <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
+            <element signature="e#3774#4442#0#PHP" expanded="false" />
+            <element signature="e#4448#4990#0#PHP" expanded="false" />
+            <element signature="e#4996#5643#0#PHP" expanded="false" />
+            <element signature="e#5649#6486#0#PHP" expanded="false" />
+            <element signature="e#6492#7270#0#PHP" expanded="false" />
+            <element signature="e#7275#7720#0#PHP" expanded="false" />
+            <element signature="e#7726#8223#0#PHP" expanded="false" />
+            <element signature="e#8229#8796#0#PHP" expanded="false" />
+            <element signature="e#8802#10036#0#PHP" expanded="false" />
+            <element signature="e#10042#10930#0#PHP" expanded="false" />
+            <element signature="e#10936#11804#0#PHP" expanded="false" />
+            <element signature="e#11810#12543#0#PHP" expanded="false" />
+            <element signature="e#12549#13565#0#PHP" expanded="false" />
+            <element signature="e#13571#14165#0#PHP" expanded="false" />
+            <element signature="e#14171#14554#0#PHP" expanded="false" />
+            <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+            <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+            <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
           </folding>
         </state>
       </provider>
@@ -739,49 +791,59 @@
         <state relative-caret-position="550">
           <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-            <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-            <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-            <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-            <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-            <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-            <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-            <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-            <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-            <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+            <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+            <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+            <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+            <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+            <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+            <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+            <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+            <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+            <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
           </folding>
         </state>
       </provider>
@@ -792,24 +854,24 @@
           <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
           <folding>
             <element signature="e#48#88#0#PHP" expanded="true" />
-            <element signature="e#2222#3259#0#PHP" expanded="false" />
-            <element signature="e#3265#3934#0#PHP" expanded="false" />
-            <element signature="e#3940#4482#0#PHP" expanded="false" />
-            <element signature="e#4488#5135#0#PHP" expanded="false" />
-            <element signature="e#5141#5978#0#PHP" expanded="false" />
-            <element signature="e#5984#6429#0#PHP" expanded="false" />
-            <element signature="e#6435#6932#0#PHP" expanded="false" />
-            <element signature="e#6938#7505#0#PHP" expanded="false" />
-            <element signature="e#7511#8745#0#PHP" expanded="false" />
-            <element signature="e#8751#9639#0#PHP" expanded="false" />
-            <element signature="e#9645#10513#0#PHP" expanded="false" />
-            <element signature="e#10519#11252#0#PHP" expanded="false" />
-            <element signature="e#11258#12274#0#PHP" expanded="false" />
-            <element signature="e#12280#12869#0#PHP" expanded="false" />
-            <element signature="e#12875#13258#0#PHP" expanded="false" />
-            <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-            <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-            <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
+            <element signature="e#3774#4442#0#PHP" expanded="false" />
+            <element signature="e#4448#4990#0#PHP" expanded="false" />
+            <element signature="e#4996#5643#0#PHP" expanded="false" />
+            <element signature="e#5649#6486#0#PHP" expanded="false" />
+            <element signature="e#6492#7270#0#PHP" expanded="false" />
+            <element signature="e#7275#7720#0#PHP" expanded="false" />
+            <element signature="e#7726#8223#0#PHP" expanded="false" />
+            <element signature="e#8229#8796#0#PHP" expanded="false" />
+            <element signature="e#8802#10036#0#PHP" expanded="false" />
+            <element signature="e#10042#10930#0#PHP" expanded="false" />
+            <element signature="e#10936#11804#0#PHP" expanded="false" />
+            <element signature="e#11810#12543#0#PHP" expanded="false" />
+            <element signature="e#12549#13565#0#PHP" expanded="false" />
+            <element signature="e#13571#14165#0#PHP" expanded="false" />
+            <element signature="e#14171#14554#0#PHP" expanded="false" />
+            <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+            <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+            <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
           </folding>
         </state>
       </provider>
@@ -840,49 +902,59 @@
         <state relative-caret-position="425">
           <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
           <folding>
-            <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-            <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-            <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-            <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-            <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-            <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-            <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-            <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-            <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-            <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+            <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+            <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+            <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+            <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+            <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+            <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+            <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+            <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+            <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
           </folding>
         </state>
       </provider>
@@ -937,13 +1009,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1020,24 +1085,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/routers/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/container-interop/container-interop/docs/images/interoperating_containers.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/routers/Defeitos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/model/Evaluation.php">
@@ -1055,27 +1105,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/routers/Discrepancia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/debug.log" />
-    <entry file="file://$PROJECT_DIR$/api/v1/database/Connection.php">
+    <entry file="file://$PROJECT_DIR$/api/v1/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1083,95 +1117,144 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/routers/Defeitos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/database/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/routers/Evaluations.php">
+    <entry file="file://$PROJECT_DIR$/api/v1/routers/Discrepancia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/database/Queries.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" column="144" selection-start-line="19" selection-start-column="144" selection-end-line="19" selection-end-column="144" />
+        <state relative-caret-position="275">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1495925385453" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="391:438" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="518:570" ph="select titul... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="619:677" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
-            <marker date="1495925385453" expanded="true" signature="889:937" ph="select name usuario" />
-            <marker date="1495925385453" expanded="true" signature="955:1006" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
-            <marker date="1495925385453" expanded="true" signature="1363:1437" ph="INSERT INTO usuario... " />
-            <marker date="1495925385453" expanded="true" signature="1471:1530" ph="SELECT * FRO... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1569:1977" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="1609:1668" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="1686:1743" ph="select email... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2014:2133" ph="UPDATE cx_en... " />
-            <marker date="1495925385453" expanded="true" signature="2182:2502" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2182:2503" ph="SELECT b.tit... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2222:2281" ph="select profi... usuario" />
-            <marker date="1495925385453" expanded="true" signature="2549:2611" ph="SELECT * FRO... cx_entrada" />
-            <marker date="1495925385453" expanded="true" signature="2649:2785" ph="select id, n... tarefas" />
-            <marker date="1495925385453" expanded="true" signature="2824:2882" ph="select * FRO... pergunta" />
-            <marker date="1495925385453" expanded="true" signature="2924:2956" ph="select * fro... " />
-            <marker date="1495925385453" expanded="true" signature="2924:2993" ph="select * fro... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="3036:3245" ph="INSERT INTO `discrepancias`... " />
-            <marker date="1495925385453" expanded="true" signature="3283:3485" ph="SELECT count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3522:3738" ph="INSERT INTO `log_votacao`... " />
-            <marker date="1495925385453" expanded="true" signature="3783:4777" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3791:3930" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="3942:4081" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4093:4220" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4234:4241" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4234:4280" ph="select nome tarefas" />
-            <marker date="1495925385453" expanded="true" signature="4298:4356" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="4372:4503" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4509:4648" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4818:5719" ph="SELECT (sele... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4826:4965" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="4977:5116" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5129:5256" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5272:5403" ph="select sum(p... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5409:5548" ph="select count... log_votacao" />
-            <marker date="1495925385453" expanded="true" signature="5569:5627" ph="select valor... alternativas" />
-            <marker date="1495925385453" expanded="true" signature="5756:5823" ph="insert into tarefas... " />
-            <marker date="1495925385453" expanded="true" signature="5756:5863" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="298:828" ph="select usuar... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="391:438" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="518:570" ph="select titul... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="619:677" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="869:1170" ph="select comen... discrepancias" />
+            <marker date="1496096391038" expanded="true" signature="889:937" ph="select name usuario" />
+            <marker date="1496096391038" expanded="true" signature="955:1006" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1211:1328" ph="INSERT INTO avaliacao... " />
+            <marker date="1496096391038" expanded="true" signature="1363:1440" ph="INSERT INTO usuario... " />
+            <marker date="1496096391038" expanded="true" signature="1474:1538" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1474:1539" ph="SELECT * FRO... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1578:1986" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="1618:1677" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="1695:1752" ph="select email... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2023:2142" ph="UPDATE cx_en... " />
+            <marker date="1496096391038" expanded="true" signature="2191:2511" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2191:2512" ph="SELECT b.tit... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2231:2290" ph="select profi... usuario" />
+            <marker date="1496096391038" expanded="true" signature="2558:2620" ph="SELECT * FRO... cx_entrada" />
+            <marker date="1496096391038" expanded="true" signature="2668:2681" ph="SELECT () FR... " />
+            <marker date="1496096391038" expanded="true" signature="2668:2713" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2728" ph="SELECT * FRO... WHERE" />
+            <marker date="1496096391038" expanded="true" signature="2668:2740" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2746" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2668:2752" ph="SELECT * FRO... avaliacao" />
+            <marker date="1496096391038" expanded="true" signature="2790:2926" ph="select id, n... tarefas" />
+            <marker date="1496096391038" expanded="true" signature="2965:3023" ph="select * FRO... pergunta" />
+            <marker date="1496096391038" expanded="true" signature="3065:3097" ph="select * fro... " />
+            <marker date="1496096391038" expanded="true" signature="3065:3134" ph="select * fro... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="3177:3386" ph="INSERT INTO `discrepancias`... " />
+            <marker date="1496096391038" expanded="true" signature="3424:3626" ph="SELECT count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3663:3879" ph="INSERT INTO `log_votacao`... " />
+            <marker date="1496096391038" expanded="true" signature="3924:4979" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="3932:4071" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4083:4222" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4234:4361" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4375:4382" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4375:4421" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4477" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4439:4486" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="4500:4558" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="4574:4705" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="4711:4850" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5020:5982" ph="SELECT (sele... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5028:5167" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5179:5318" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5331:5458" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5474:5605" ph="select sum(p... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5611:5750" ph="select count... log_votacao" />
+            <marker date="1496096391038" expanded="true" signature="5770:5817" ph="select nome tarefas" />
+            <marker date="1496096391038" expanded="true" signature="5832:5890" ph="select valor... alternativas" />
+            <marker date="1496096391038" expanded="true" signature="6019:6086" ph="insert into tarefas... " />
+            <marker date="1496096391038" expanded="true" signature="6019:6126" ph="insert into tarefas... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/routers/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="e#221#260#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/application/API.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1371">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="2390">
+          <caret line="643" column="0" selection-start-line="643" selection-start-column="0" selection-end-line="643" selection-end-column="0" />
           <folding>
             <element signature="e#48#88#0#PHP" expanded="true" />
-            <element signature="e#2222#3259#0#PHP" expanded="false" />
-            <element signature="e#3265#3934#0#PHP" expanded="false" />
-            <element signature="e#3940#4482#0#PHP" expanded="false" />
-            <element signature="e#4488#5135#0#PHP" expanded="false" />
-            <element signature="e#5141#5978#0#PHP" expanded="false" />
-            <element signature="e#5984#6429#0#PHP" expanded="false" />
-            <element signature="e#6435#6932#0#PHP" expanded="false" />
-            <element signature="e#6938#7505#0#PHP" expanded="false" />
-            <element signature="e#7511#8745#0#PHP" expanded="false" />
-            <element signature="e#8751#9639#0#PHP" expanded="false" />
-            <element signature="e#9645#10513#0#PHP" expanded="false" />
-            <element signature="e#10519#11252#0#PHP" expanded="false" />
-            <element signature="e#11258#12274#0#PHP" expanded="false" />
-            <element signature="e#12280#12869#0#PHP" expanded="false" />
-            <element signature="e#12875#13258#0#PHP" expanded="false" />
-            <marker date="1495925524208" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
-            <marker date="1495925524208" expanded="true" signature="2718:2777" ph="select * fro... usuario" />
-            <marker date="1495925524208" expanded="true" signature="8398:8515" ph="INSERT INTO log_tarefas... " />
+            <element signature="e#3774#4442#0#PHP" expanded="false" />
+            <element signature="e#4448#4990#0#PHP" expanded="false" />
+            <element signature="e#4996#5643#0#PHP" expanded="false" />
+            <element signature="e#5649#6486#0#PHP" expanded="false" />
+            <element signature="e#6492#7270#0#PHP" expanded="false" />
+            <element signature="e#7275#7720#0#PHP" expanded="false" />
+            <element signature="e#7726#8223#0#PHP" expanded="false" />
+            <element signature="e#8229#8796#0#PHP" expanded="false" />
+            <element signature="e#8802#10036#0#PHP" expanded="false" />
+            <element signature="e#10042#10930#0#PHP" expanded="false" />
+            <element signature="e#10936#11804#0#PHP" expanded="false" />
+            <element signature="e#11810#12543#0#PHP" expanded="false" />
+            <element signature="e#12549#13565#0#PHP" expanded="false" />
+            <element signature="e#13571#14165#0#PHP" expanded="false" />
+            <element signature="e#14171#14554#0#PHP" expanded="false" />
+            <marker date="1496108858307" expanded="true" signature="1205:1316" ph="select idava... avaliacao" />
+            <marker date="1496108858307" expanded="true" signature="2752:2855" ph="select u_nam... " />
+            <marker date="1496108858307" expanded="true" signature="9689:9806" ph="INSERT INTO log_tarefas... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/routers/Evaluations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

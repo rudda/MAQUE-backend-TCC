@@ -9,26 +9,23 @@
  * beltrao.rudah@gmail.com
  */
 
-     
+use Beltrao\WeqtApi\v1\application\API;
+use Slim\Http\Request;
+use Slim\Http\Response;
     
-    $app->get('/defeito', function (Request $request, Response $response, $args){
+    $app->get('/defeitos', function (Request $request, Response $response, $args){
     
         $id = $request->getParam('id');
-        
-        
-        
+        if($id>0){
+            
+            $api = new API();
+            $response->write($api->getDefeitos($id));
+
+
+        }
+
     
     });
     
-    $app->post('/defeito', function(Request $request, Response $response, $args){
-    
-    
-    
-    });
-    
-    $app->put('/defeito', function(Request $request, Response $response, $args){
-    
-    
-    
-    });
-        
+
+

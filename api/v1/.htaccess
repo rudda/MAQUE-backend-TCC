@@ -1,6 +1,11 @@
+# Habilitar o PHP
+AddHandler application/x-httpd-php56 .php
+<IfModule mod_suphp.c>
+suPHP_ConfigPath /opt/php56/lib
+</IfModule>
+
 RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 
 RewriteRule ^(.*)$ index.php
-
