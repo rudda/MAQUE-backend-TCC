@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1facb04c-cacc-4f8d-ba24-8795876dac42" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/1495921273.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1495921720.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1495921971.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1495922017.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1495922566.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1495951322.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1496010091.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc-1496010108.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/tcle-1495921720.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/tcle-1495921971.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/tcle-1495922017.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/tcle-1495922566.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/tcle-1495951322.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/tcle-1496010091.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/tcle-1496010108.pdf" afterPath="$PROJECT_DIR$/docs/tcle-1496010108.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weqt.iws" />
@@ -353,7 +338,7 @@
       <workItem from="1495946829193" duration="11871000" />
       <workItem from="1496089697532" duration="13235000" />
       <workItem from="1496107025824" duration="2430000" />
-      <workItem from="1496326276176" duration="2472000" />
+      <workItem from="1496326276176" duration="2866000" />
     </task>
     <task id="LOCAL-00001" summary="add method addDiscrepancia">
       <created>1493974109097</created>
@@ -394,7 +379,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175400000" />
+    <option name="totallyTimeSpent" value="175794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -403,13 +388,13 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8305921" sideWeight="0.50292826" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34703946" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8305921" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8305921" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />

@@ -13,11 +13,11 @@ namespace Beltrao\WeqtApi\v1\database;
 use PDO;
 class Connection
 {
-    public static $DATABASE_NAME= "lab31487_weqt";
-    public static $DATABASE_PASS= "meganfox123";
-    public static $DATABASE_USER= "lab31487_weqt";
-    public static $DATABASE_PORT="80";
-    public static $DATABASE_HOST= "localhost";
+    public static $DATABASE_NAME= "";
+    public static $DATABASE_PASS= "";
+    public static $DATABASE_USER= "";
+    public static $DATABASE_PORT="";
+    public static $DATABASE_HOST= "";
 
 
     static function connect(){
