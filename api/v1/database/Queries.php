@@ -20,8 +20,11 @@ class Queries
     public static $PUT_EVALUATION = "INSERT INTO avaliacao (titulo, tcle, doc, moderador, descricao) values (:titulo, :tcle, :doc, :moderador, :descricao)";
 
     public static $PUT_USER = "INSERT INTO usuario(u_name, email, profile) values ( :nome, :email, :profile)";
-    public static $GET_USER = "SELECT * FROM usuario where email = ':email' and u_name = ':nome'";
 
+    public static $GET_USER = "SELECT a.id AS id, a.u_name AS nome, a.profile AS foto, a.email AS email
+                                FROM usuario AS a where a.email = ':email' and a.u_name = ':nome'";
+
+    
 
     public static $GET_INVITES = 'SELECT b.titulo as title, b.descricao, (select profile from usuario where usuario.id = a.usuario_id) as fromProfile,(select email from usuario where usuario.id = a.usuario_id) as fromEmail, b.tcle, b.doc, b.idavaliacao as idOfEvaluation, b.data_criacao as criacao  FROM cx_entrada as a inner join avaliacao  as b where a.usuario_id = :id and a.status_avaliacao = 0 and b.idavaliacao = a.avaliacao_idavaliacao';
     public static $POST_INVITE = 'UPDATE cx_entrada SET status_avaliacao= :status WHERE avaliacao_idavaliacao = :id_avaliacao and usuario_id= :usuario_id';
@@ -47,5 +50,8 @@ class Queries
     public static $GET_PRIORIDADE = 'SELECT (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) as sim, (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =0 ) as nao, ( select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) as total, ( (select sum(prioridade) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao ) / (select count(voto) from log_votacao where alternativa_id = l.alternativa_id and avaliacao_idavaliacao = l.avaliacao_idavaliacao and voto =1 ) ) as prioridade,(select nome from tarefas where id = l.tarefa_id) as tarefa  ,(select valor from alternativas where id = l.alternativa_id) as titulo FROM `log_votacao` as l where `avaliacao_idavaliacao` =1 group by alternativa_id';
 
     public static $PUT_TAREFA = 'insert into tarefas (avaliacao_idavaliacao, nome, desc_tarefa, url) values(:avaliacao, :nome, :descr, :url)';
+
+    //invite
+    public static $acceptInvite = '';
 
 }

@@ -34,8 +34,8 @@ namespace Beltrao\WeqtApi\v1\routers;
     $app->get('/usuario', function (Request $request, Response $response, $args){
        
         $u = new Usuario();
-        $u->nome = $request->getParam('u_name');
-        $u->email = $request->getParam('u_email');
+        $u->nome = urldecode($request->getParam('u_name') );
+        $u->email = urldecode($request->getParam('u_email') );
 
 
         $api = new API();
